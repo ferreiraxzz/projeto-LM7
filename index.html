@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LM7 Games</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--NBA 2K25-->
+
+  <div id="background">
+    <video loop autoplay muted>
+      <source src="assets/video_2k25.mp4" type="video/mp4">
+    </video>
+  </div>  
+
+  <div id="app">
+    <header>
+      <img src="assets/controle_png.png" alt="">
+      <ul class="navigation">
+        <li>
+          <a href="index.html" class="navigation__link">Home</a>
+        </li>
+        <li>
+          <a href="#titulo" class="navigation__link" >Store</a>
+        </li>
+        <li>
+          <a href="#cards" class="navigation__link">About Us</a>
+        </li>
+      </ul>
+      <div class="navigation__social">
+        <a href="https://www.instagram.com/ferreira.xzz/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="#EDF1F7"
+              d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+          </svg></a>
+        <a href="https://www.instagram.com/ferreira.xzz/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#EDF1F7"
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+          </svg></a>
+        <a href="https://www.instagram.com/ferreira.xzz/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#EDF1F7"
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+          </svg></a>
+        <a href="https://www.instagram.com/ferreira.xzz/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="#EDF1F7"
+              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+          </svg></a>
+        <a href="https://www.youtube.com/@ferreiraxz7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path fill="#EDF1F7"
+              d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+          </svg></a>
+      </div>
+    </header>
+    <main>
+      <div class="main_info_2k">
+        <img data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" src="assets/logo_2k25.png"
+          width="350px">
+
+        <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-easing="ease-in-out">
+          O NBA 2K25 é a mais recente edição da popular franquia de simulação de basquete da 2K Sports. O jogo traz
+          várias melhorias gráficas e de jogabilidade, mantendo seu foco em oferecer uma experiência realista e imersiva
+          de basquete. Algumas das novidades incluem melhorias nos modos de jogo, como MyCareer, MyTeam e MyNBA, com
+          maior personalização e interação com jogadores e times.
+          A edição de 2025 também inclui animações mais fluidas, inteligência artificial aprimorada e novos movimentos
+          que refletem melhor o estilo dos jogadores reais da NBA.
+        </p>
+
+
+        <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="800" data-aos-easing="ease-in-out">
+          <a href="https://www.youtube.com/watch?v=qx0A921z8mA" target="_blank">Assistir Trailer</a>
+          <a href="2k25.html" class="button_buy">Comprar</a>
+          
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!--FIFA 24-->
+  <section>
+    <div id="background_fifa">
+      <video loop autoplay muted>
+        <source src="assets/video_fifa.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div id="app">
+      <main>
+        <div class="main_info_fifa">
+          <img data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" src="assets/logo_fifa.png"
+            width="250px">
+
+          <p class="fifa" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-easing="ease-in-out">
+            EA FC 25 será a próxima edição da série de jogos de futebol da EA Sports, sucedendo o EA FC 24. O jogo continuará a oferecer uma experiência realista de futebol, com melhorias gráficas, de jogabilidade e novas mecânicas. Espera-se que o HyperMotion, IA avançada e animações aprimoradas tragam mais realismo ao jogo, assim como novas atualizações nos modos Carreira, Ultimate Team e Pro Clubs. Além disso, EA FC 25 provavelmente continuará com licenças de ligas, times e jogadores reais, reforçando a autenticidade da série. A comunidade espera inovações tanto no conteúdo quanto na jogabilidade online, com eventos sazonais e competições mais interativas.
+          </p>
+
+
+          <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="800" data-aos-easing="ease-in-out">
+            <a href="https://www.youtube.com/watch?v=pBM2xyco_Kg&pp=ygUPRklGQSAyNCB0cmFpbGVy" target="_blank">Assistir
+              Trailer</a>
+            <a href="fifa.html" class="button_buy">Comprar</a>
+
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!--HORIZON-->
+
+  <section>
+    <div id="background_horizon">
+      <video loop autoplay muted>
+        <source src="assets/video_horizon.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div id="app">
+      <main>
+        <div class="main_info_horizon">
+          <img data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" src="assets/logo_horizon.png"
+            width="250px">
+
+          <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-easing="ease-in-out">
+            Horizon Forbidden West é um jogo de ação e aventura que continua a história de Aloy, uma jovem caçadora em
+            um mundo pós-apocalíptico dominado por máquinas. Na sequência de Horizon Zero Dawn, Aloy viaja para o Oeste
+            Proibido, uma região desconhecida cheia de novos perigos, tribos hostis e máquinas poderosas.
+            O jogo se destaca por seu vasto mundo aberto, gráficos de alta qualidade e detalhes impressionantes,
+            explorando diversos ambientes, desde florestas exuberantes até oceanos profundos. Novas mecânicas de jogo
+            incluem exploração submarina, voo com montarias mecânicas e um sistema de combate mais dinâmico. A história
+            segue Aloy enquanto ela tenta impedir uma nova ameaça à Terra, enfrentando desafios ainda maiores enquanto
+            descobre segredos sobre o passado e o futuro do planeta.
+          </p>
+
+
+          <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="800" data-aos-easing="ease-in-out">
+            <a href="https://www.youtube.com/watch?v=ztwwQByMmmE&pp=ygUeaG9yaXpvbiBmb3JiaWRkZW4gd2VzdCB0cmFpbGVy"
+              target="_blank">Assistir Trailer</a>
+              <a href="horizon.html" class="button_buy">Comprar</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!--WUKONG-->
+
+  <section>
+    <div id="background_wukong">
+      <video loop autoplay muted>
+        <source src="assets/video_wukong.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div id="app">
+      <main>
+        <div class="main_info_wukong">
+          <img data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out" src="assets/logo_wukong.webp"
+            width="250px">
+
+          <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-easing="ease-in-out">
+            Black Myth: Wukong é um jogo de ação e RPG baseado no conto chinês Jornada ao Oeste. O jogador controla Sun
+            Wukong, o Rei Macaco, em um mundo de fantasia inspirado na mitologia chinesa, enfrentando criaturas místicas
+            e deuses. O jogo é conhecido por seus gráficos impressionantes e combate dinâmico, com habilidades de
+            transformação e poderes especiais. A narrativa segue Wukong enquanto ele explora ambientes variados e
+            enfrenta desafios épicos em sua jornada.
+          </p>
+
+
+          <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="800" data-aos-easing="ease-in-out">
+            <a href="https://www.youtube.com/watch?v=pnSsgRJmsCc&t=25s&pp=ygUZYmxhY2sgbXl0aCB3dWtvbmcgdHJhaWxlcg%3D%3D"
+              target="_blank">Assistir Trailer</a>
+              <a href="wukong.html" class="button_buy">Comprar</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+  
+  <!--Preços-->
+  
+<section id="bg">
+  <div id="titulo">
+    <h1>STORE</h1>
+  </div>
+
+  <section id="section">
+    
+   <!--Card 2k25--> 
+  <div class="card_2k">
+      <a href="2k25.html"><img src="assets/capa_2k25.avif"></a>
+    <div>
+      <h1>NBA 2K25</h1>
+      <span>R$ 259,99</span>
+      <a href="2k25.html"><button>Comprar</button></a>
+    </div>
+  </div>
+
+  <div id="separador"></div>
+
+   <!--Card FIFA--> 
+
+  <div class="card_fifa">
+    <a href="fifa.html"><img  src="assets/capa_fifa.webp"></a>
+  <div>
+    <h1>EA FC 25</h1>
+    <span>R$ 259,99</span>
+    <a href="fifa.html"><button>Comprar</button></a>
+
+  </div>
+</div>
+  </section>
+ 
+<section id="section">
+   <!--Card HORIZON--> 
+
+   <div class="card_horizon">
+    <a href="horizon.html"><img src="assets/capa_horizon.webp"></a>
+  <div>
+    <h1>Horizon Forbidden West</h1>
+    <span>R$ 259,99</span>
+    <a href="horizon.html"><button>Comprar</button></a>
+  </div>
+</div>
+
+  <div id="separador"></div>
+
+   <!--Card wukong--> 
+
+    <div class="card_wukong">
+      <a href="wukong.html"><img src="assets/capa_wukong.png"></a>  
+      <div>  
+        <h1>Horizon Forbidden West</h1>
+        <span>R$ 259,99</span>
+        <a href="wukong.html"><button>Comprar</button></a>
+      </div> 
+    </div>
+  </section>
+</section>
+
+<!--Reviews-->
+<section class="cards" id="cards">
+  <div class="container">
+    <div class="section_header">
+      <h2 class="title">Feedbacks!</h2>
+    </div>
+    <div class="conteudo">
+      <div class="swiper slider">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide item">
+            <div class="info">
+              <img src="assets/memphis_profile.jpeg">
+              <div class="textbox">
+                <h3 class="name">Memphis Depay</h3>
+                <span class="job">Player</span>
+              </div>
+            </div>
+            <p>A entrega foi super rápida e o jogo é simplesmente incrível! Gráficos de altíssima qualidade e jogabilidade viciante. Valeu cada centavo, recomendo! 👉😤👈</p>
+            <div class="rating"></div>
+          </div>
+          
+          <div class="swiper-slide item">
+            <div class="info">
+              <img src="assets/garro_profile.jpg">
+              <div class="textbox">
+                <h3 class="name">Rodrigo Garro</h3>
+                <span class="job">Player</span>
+              </div>
+            </div>
+            <p>Comprei aqui pela primeira vez e fiquei muito satisfeito. O jogo chegou no prazo e em perfeitas condições. Um game fenomenal, vale muito a pena! 👉🤪👈</p>
+            <div class="rating"></div>
+          </div>
+
+          <div class="swiper-slide item">
+            <div class="info">
+              <img src="assets/hugo_profile.jpg">
+              <div class="textbox">
+                <h3 class="name">Hugo Souza</h3>
+                <span class="job">Player</span>
+              </div>
+            </div>
+            <p>Melhor compra que fiz nos últimos tempos! O game é sensacional, com horas de diversão garantida, e o processo de compra foi extremamente rápido e fácil. Tudo perfeito! 🧱🧤</p>
+            <div class="rating"></div>
+          </div>
+          
+          <div class="swiper-slide item">
+            <div class="info">
+              <img src="assets/andre_profile.jpg">
+              <div class="textbox">
+                <h3 class="name">André Ramalho</h3>
+                <span class="job">Player</span>
+              </div>
+            </div>
+            <p>Jogo incrível e o serviço foi excelente! Chegou antes do prazo estimado e em ótimo estado. A experiência de compra foi impecável, vou comprar sempre por aqui! 🫡⭐</p>
+            <div class="rating"></div>
+          </div>
+
+          <div class="swiper-slide item">
+            <div class="info">
+              <img src="assets/carillo_profile.jpg">
+              <div class="textbox">
+                <h3 class="name">André Carillo</h3>
+                <span class="job">Player</span>
+              </div>
+            </div>
+            <p>Experiência de compra maravilhosa! O jogo chegou rapidamente e superou todas as minhas expectativas. Gráficos deslumbrantes e jogabilidade imersiva. Site confiável, com ótimos preços! 💪🦅</p>
+            <div class="rating"></div>
+          </div>
+
+          <div class="swiper-slide item">
+            <div class="info">
+              <img src="assets/raniele_profile.jpeg">
+              <div class="textbox">
+                <h3 class="name">Raniele</h3>
+                <span class="job">Player</span>
+              </div>
+            </div>
+            <p>Ótima experiência de compra! O jogo chegou muito rápido e em perfeito estado. A jogabilidade e os gráficos são de tirar o fôlego. Recomendo demais o site!🐶🦅</p>
+            <div class="rating"></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-pagination cards-pagination"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer id="rodape">
+  <h5>Site desenvolvido por Miguel Martins</h5>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.slider', {
+        grabCursor: true,
+        spaceBetween: 30,
+        pagination:{
+          el: '.cards-pagination',
+        clickable: true
+      },
+      breakpoints:{
+        767:{
+          slidesPerView: 3
+        }
+      }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

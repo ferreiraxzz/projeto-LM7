@@ -1,0 +1,185 @@
+/* NBA 2K25*/
+main{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    max-width: 1440px;
+}
+
+.main_info_2k{
+    width: 100%;
+    max-width: 570px;
+}
+
+.main_info_2k p{
+    font-size: 10x;
+    margin: 20px 0px 28px;
+}
+
+.main_info_2k div {
+    display: flex;
+    column-gap: 32px;
+}
+
+.main_info_2k div a, .main_info_2k div button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+
+    transform: skew(-10deg);
+}
+
+.main_info_2k div a{
+    background: var(--red);
+}
+
+.main_info_2k .button_buy{
+    background: transparent;
+    border: 1px solid var(--green);
+}
+.main_info_2k .button_buy:hover{
+    background: var(--green);
+    border: 1px solid var(--green);
+}
+
+/*FIFA 24*/
+
+.main_info_fifa{
+    width: 100%;
+    max-width: 570px;
+}
+
+.main_info_fifa p{
+    font-size: 14px;
+    margin: 20px 0px 28px;
+}
+
+.main_info_fifa div {
+    display: flex;
+    column-gap: 32px;
+}
+
+.main_info_fifa div a, .main_info_fifa div button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+
+    transform: skew(-10deg);
+}
+
+.main_info_fifa div a{
+    background: var(--red);
+}
+
+.main_info_fifa .button_buy{
+    background: transparent;
+    border: 1px solid var(--green);
+}
+.main_info_fifa .button_buy:hover{
+    background: var(--green);
+    border: 1px solid var(--green);
+}
+
+/*HORIZON*/
+
+.main_info_horizon{
+    width: 100%;
+    max-width: 570px;
+}
+
+.main_info_horizon p{
+    font-size: 15px;
+    margin: 20px 0px 28px;
+}
+
+.main_info_horizon div {
+    display: flex;
+    column-gap: 32px;
+}
+
+.main_info_horizon div a, .main_info_horizon div button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+
+    transform: skew(-10deg);
+}
+
+.main_info_horizon div a{
+    background: var(--red);
+}
+
+.main_info_horizon .button_buy{
+    background: transparent;
+    border: 1px solid var(--green);
+}
+.main_info_horizon .button_buy:hover{
+    background: var(--green);
+    border: 1px solid var(--green);
+}
+
+/*WUKONG*/
+
+.main_info_wukong{
+    width: 100%;
+    max-width: 570px;
+}
+
+.main_info_wukong p{
+    font-size: 17px;
+    margin: 20px 0px 28px;
+}
+
+.main_info_wukong div {
+    display: flex;
+    column-gap: 32px;
+}
+
+.main_info_wukong div a, .main_info_wukong div button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+
+    transform: skew(-10deg);
+}
+
+.main_info_wukong div a{
+    background: var(--red);
+}
+
+.main_info_wukong .button_buy{
+    background: transparent;
+    border: 1px solid var(--green);
+}
+.main_info_wukong .button_buy:hover{
+    background: var(--green);
+    border: 1px solid var(--green);
+}

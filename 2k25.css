@@ -1,0 +1,223 @@
+@import url(header.css);
+
+/*Gerais*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #edf1f7;
+    --red: #c51212;
+    --blue: #0041c2;
+    --green: #14b02d;
+    --yellow: #ffc12b;
+}
+
+body{
+    background-color: rgb(15, 14, 14);
+}
+
+body, button, a{
+    color: var(--text);
+    font: 400 1rem "Mukta", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    height: 18vh;
+    border-bottom: 1px solid var(--red);
+}
+
+/*Conteúdo*/
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-image: url(assets/fundo2_png.png);
+    background-size: cover;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.items{
+    align-self: flex-end;
+}
+
+.select-image{
+    max-width: 400px;
+}
+
+.select-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.thumbs{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+    gap: 10px;
+}
+
+.thumb{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.thumb img{
+    width: 195px;
+    border-radius: 10px;
+}
+
+.right-side{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side h6{
+    color: var(--red);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.content{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side h1{
+    font-size: 35px;
+}
+
+.right-side p{
+    color: whitesmoke ;
+}
+
+.options{
+    display: flex;
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: fit-content;
+    padding: 10px 20px 0px 0px;
+}
+
+.amount span{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.minus img{
+    width: 35px;
+    filter: invert();
+    padding-top: 7.6px;
+    cursor: pointer;
+}
+
+.plus img{
+    width: 23px;
+    padding-top: 8px;
+    filter: invert();
+    cursor: pointer;
+}
+
+.cart{
+    width: 30px;
+    float: left;
+    filter: invert();
+    margin-right: 15px;
+    align-items: center;
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: var(--red);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.prices{
+    display: flex;
+    flex-direction: column;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.off{
+    font-size: 17px;
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.extra{
+    display: flex;
+    width: 80%;
+    height: calc(100vh - 300px);
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-left: 250px;
+}
+
+.informations{
+    text-align: justify;
+}
+
+.livre{
+    display:inline-flex;
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+.livre img{
+    padding-right: 10px;
+}
+
+
+.topic{
+    display: flex;
+}
